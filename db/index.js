@@ -3,10 +3,10 @@
 //prevents circular reference
 
 //idea here is - "need just one file to import all models and db to app.js"
-const db = require('./_db.js'); //require in your model
+const db = require('./_db.js').db; //require in your model
 
 //all of our models
-const Cheese = require('./models/cheese.js')
+const Cheese = require('./models/Cheese')
 const Store = require('./models/Store')
 
 //all of our models and their associations

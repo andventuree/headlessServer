@@ -1,7 +1,8 @@
 const express = require('express');
 const router = express.Router();
-const { Cheese } = require('../db');
+const { Cheese } = require('../db/models/Cheese');
 // const Cheese = require('../db').Cheese;
+module.exports = router;
 
 // router.get('/', (req,res,next)=>{
 //   res.send('in cheses')
