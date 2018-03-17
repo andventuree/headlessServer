@@ -27,8 +27,10 @@ app.get('*', (req,res,next)=>{
   res.send('splat');
 })
 
+// console.log(db);
 db.sync({force:true})
 .then(()=>{
+  console.log('database synced')
   app.listen(3000, function(){
     console.log('port 3000 started');
   })
